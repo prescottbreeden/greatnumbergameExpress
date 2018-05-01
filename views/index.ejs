@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Great Number Game</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<h1>Welcome to the Great Number Game!</h1>
 		<p>I am thinking of a number between 1 and 100:</p>
-		<div class="result {{session['style']}}">
-			<h2>{{session['game_status']}}</h2>
+		<div class="result ">
+			<h2><%= req.session.game_status %></h2>
 		</div>
 		<br>
 		<form method="post" action="/process">
@@ -21,8 +21,8 @@
 				</tr>
 			</table>
 		</form>
-		<p>Attempts: {{session['counter']}}</p>
-		<p class="{{session['trophy-color']}}"><i class="fas fa-trophy"></i> {{session['trophy']}} <i class="fas fa-trophy"></i></p>
+		<p>Attempts: Counter</p>
+		<p class="<%= req.session.trophy_color %>"><i class="fas fa-trophy"></i><%= req.session.trophy %><i class="fas fa-trophy"></i></p>
 		<form action="/clear" method="post">
 			<button class="reset-btn" type="submit">RESET GAME</button>
 		</form>

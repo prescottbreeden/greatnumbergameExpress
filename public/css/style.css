@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Itim', cursive;
+	text-align: center;
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #EEEEEE;
+	transition-duration: .25s;
+}
+p {
+	font-size: 20px;
+	margin: 10px;
+}
+
+input {
+	padding: 9px;
+	border-radius: 5px;
+	width: 70px;
+	box-shadow: 5px 5px 5px black;
+	margin-right: 10px;
+	vertical-align: top;
+	font-size: 20px;
+	text-align: center; 
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;}
+  
+table {
+	margin: 0 auto;
+}
+button {
+	padding: 11px;
+	font-family: 'Itim', cursive;
+	background-color: steelblue;
+	color: #EEEEEE;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+button:hover {
+	background-color: rgb(255, 102, 0);
+	transition-duration: .5s;
+}
+.reset-btn {
+	margin: 15px;
+	width: 220px;
+}
+.submit-btn {
+	width: 100px;
+}
+.wrapper {
+	margin-top: 50px;
+}
+
+.result {
+	padding: 100px 50px;
+}
+
+.green {
+	background-color: rgb(6, 121, 0);
+}
+
+.red {
+	background-color: rgb(255, 89, 52);
+}
+.gold {
+	color: gold;
+}
+.silver {
+	color: silver;
+}
+.bronze {
+	color: brown;
+}
+.no-trophy {
+	opacity: 0;
+}
